@@ -28,7 +28,7 @@
     "deploy": "yarn publish",
     "predeploy": "yarn run build"
   },
-  "dependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
@@ -47,6 +47,7 @@
   "peerDependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.0",
+    "prop-types": "^15.7.0",
     "react": "^17.0.0",
     "react-smooth-dnd": "^0.11.1"
   }
