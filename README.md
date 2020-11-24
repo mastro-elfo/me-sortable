@@ -1,7 +1,15 @@
+This component uses [`react-smooth-dnd`](https://github.com/kutlugsahin/react-smooth-dnd#readme) to ad _Drag and Drop_ functionality to a `List` component from [`@material-ui`](material-ui.com/).
+
 # Install
 
 ```sh
 yarn add me-sortable
+```
+
+or
+
+```sh
+npm i -s me-sortable
 ```
 
 # Use
@@ -22,10 +30,10 @@ import React, { useState } from "react";
 import List from "me-sortable";
 
 function Component() {
-  const [list, setter] = useState([
+  const [list, setList] = useState([
     /* ... */
   ]);
-  return <List update={setter}>{list.map(mapper)}</List>;
+  return <List update={setList}>{list.map(mapper)}</List>;
 }
 
 function mapper(item) {
@@ -45,6 +53,8 @@ To sort between different groups add a `groupName` and `getChildPayload` to Cont
   }}
 ></List>
 ```
+
+See also [`Container` properties](https://github.com/kutlugsahin/react-smooth-dnd#container) of `react-smooth-dnd`.
 
 # Properties
 
